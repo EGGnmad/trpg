@@ -1,0 +1,788 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07c9b2c97f84356bb2bfac29363e611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StyleTrainerData:
+    rid: 2213585397494317057
+  m_DefaultStyleData:
+    rid: 2213585397494317058
+  m_DefaultStyleVersion: 2023111600
+  m_DefaultStyles:
+  - rid: 2213585397494317268
+  m_AssetPath: 
+  m_PreviousProjectIDs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2213585397494317057
+      type: {class: StyleTrainerData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+        m_State: 1
+        m_Disposing: 0
+        m_Styles:
+        - rid: 2213585397494317270
+        m_Version: 202231001
+    - rid: 2213585397494317058
+      type: {class: StyleTrainerData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 11000000-0000-0000-0000-000000000011
+        m_State: 1
+        m_Disposing: 0
+        m_Styles:
+        - rid: 2213585397494317269
+        m_Version: 202231001
+    - rid: 2213585397494317268
+      type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 00000000-0000-0000-0000-000000000000
+        m_State: 1
+        m_Disposing: 0
+        m_IsFallback: 1
+        m_Thumbnail:
+          rid: -2
+        m_Visible: 0
+        selectedCheckPointGUID: 00000000-0000-0000-0000-000000000000
+        m_FavoriteCheckPointGUID: active
+        parentID: 00000000-0000-0000-0000-000000000000
+        m_ProjectID: 00000000-0000-0000-0000-000000000000
+        m_TrainingSteps: 2000
+        m_CheckPoints:
+        - m_Guid: 00000000-0000-0000-0000-000000000000
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: 00000000-0000-0000-0000-000000000000
+          m_Name: Default
+          m_Description: Default style.
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 
+            m_State: 0
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: 
+          m_ValidationImagesData: []
+          m_TrainingSteps: 2000
+        m_SampleOutputPrompts: []
+        m_TrainingSetData: []
+        m_Name: Default
+        m_Description: Default style.
+    - rid: 2213585397494317269
+      type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 5cc104e0-423a-473e-8034-b9d346cb2357
+        m_State: 1
+        m_Disposing: 0
+        m_IsFallback: 0
+        m_Thumbnail:
+          rid: -2
+        m_Visible: 1
+        selectedCheckPointGUID: 00000000-0000-0000-0000-000000000000
+        m_FavoriteCheckPointGUID: active
+        parentID: 00000000-0000-0000-0000-000000000000
+        m_ProjectID: 11000000-0000-0000-0000-000000000011
+        m_TrainingSteps: 2000
+        m_CheckPoints:
+        - m_Guid: 03fa404b-39fc-4979-9272-deb5d8c4b24c
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: 11000000-0000-0000-0000-000000000011
+          m_Name: Happy Harvest [Orion V4 2000]
+          m_Description: 8 Nov 2023
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 3e758588-960f-44f5-865a-d5eaa1b1dec4
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: 11000000-0000-0000-0000-000000000011
+          m_ValidationImagesData:
+          - m_Guid: 96b39a19-2d3e-4bc5-aa3c-38667ed6eba5
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 96b39a19-2d3e-4bc5-aa3c-38667ed6eba5
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A chicken
+          - m_Guid: 05de072c-ebbc-43d7-886b-7ac4f9cbd079
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 05de072c-ebbc-43d7-886b-7ac4f9cbd079
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A cow
+          - m_Guid: 2dbfc212-f87b-45f9-a05a-06368e190ca1
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 2dbfc212-f87b-45f9-a05a-06368e190ca1
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A dog
+          - m_Guid: e0139464-a868-402a-95b8-b4c26685a97b
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: e0139464-a868-402a-95b8-b4c26685a97b
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A farmer
+          - m_Guid: 4421bead-a3ff-4c09-9514-61e127eb470e
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 4421bead-a3ff-4c09-9514-61e127eb470e
+              m_State: 5
+              m_Disposing: 0
+            m_Prompt: A pine tree
+          m_TrainingSteps: 1200
+        m_SampleOutputPrompts:
+        - A chicken
+        - A cow
+        - A dog
+        - A farmer
+        - A pine tree
+        m_TrainingSetData:
+        - m_Guid: 3e758588-960f-44f5-865a-d5eaa1b1dec4
+          m_State: 5
+          m_Disposing: 0
+          m_TrainingSet: []
+          m_ProjectID: 11000000-0000-0000-0000-000000000011
+        m_Name: Default
+        m_Description: Default Style
+    - rid: 2213585397494317270
+      type: {class: StyleData, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: c770416c-521f-4fac-88a7-dc095f0cf5d2
+        m_State: 0
+        m_Disposing: 0
+        m_IsFallback: 0
+        m_Thumbnail:
+          rid: 2213585397494317271
+        m_Visible: 1
+        selectedCheckPointGUID: b64fe1ee-bf0a-4d97-bd3a-145b9671fbd5
+        m_FavoriteCheckPointGUID: active
+        parentID: 00000000-0000-0000-0000-000000000000
+        m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+        m_TrainingSteps: 2000
+        m_CheckPoints:
+        - m_Guid: 0d6fde37-81a0-417a-b83f-7413b1bf68a0
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: a83e3736-0f19-4b58-a689-1438fcf46dcc
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: a83e3736-0f19-4b58-a689-1438fcf46dcc
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: 14e72f65-9f1f-4d00-a3b4-f860ea369fef
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 14e72f65-9f1f-4d00-a3b4-f860ea369fef
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 90d48246-3ffa-45df-9d4b-bf3c456ebb45
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 90d48246-3ffa-45df-9d4b-bf3c456ebb45
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 200
+        - m_Guid: ee3e82c5-08d8-417d-a9ae-cf7c1ad9d4b7
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: fa71aa89-10e3-4c05-b8a6-2b1c9bf5ec7b
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: fa71aa89-10e3-4c05-b8a6-2b1c9bf5ec7b
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: 0bf20618-91ec-4ae0-8e5e-65620a44bae3
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 0bf20618-91ec-4ae0-8e5e-65620a44bae3
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: ce2d12bc-b125-4d66-bbcf-279179a2df6c
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: ce2d12bc-b125-4d66-bbcf-279179a2df6c
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 400
+        - m_Guid: d494830b-d80a-4dc5-85c9-f2ae263405fa
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: dc26c5f9-58b6-4acd-b244-3477438d5b69
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: dc26c5f9-58b6-4acd-b244-3477438d5b69
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: 85b37685-70a6-4ba0-8421-cdedea9b6e8a
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 85b37685-70a6-4ba0-8421-cdedea9b6e8a
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 15c10b06-e386-43fe-8c77-b8f0cfa30fd7
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 15c10b06-e386-43fe-8c77-b8f0cfa30fd7
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 600
+        - m_Guid: 5988ef3d-4cef-4f52-899c-3942b1305221
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 085d0555-a305-4a56-b460-b25dc3d2e981
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 085d0555-a305-4a56-b460-b25dc3d2e981
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: 4dec84bb-8458-4624-8cfa-60d7cda4a592
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 4dec84bb-8458-4624-8cfa-60d7cda4a592
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: a271fc1c-f83c-410f-8fc7-e85301d21019
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: a271fc1c-f83c-410f-8fc7-e85301d21019
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 800
+        - m_Guid: 5d522d55-9dec-4493-8630-a34fc0a93eee
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 426af4ff-6c6e-43c6-aefb-a8aa115e64a0
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 426af4ff-6c6e-43c6-aefb-a8aa115e64a0
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: eac6a01a-b24a-42db-81a2-3299b4c5408c
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: eac6a01a-b24a-42db-81a2-3299b4c5408c
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 74998ba9-ed4b-4767-b9a6-ddb6aa149571
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 74998ba9-ed4b-4767-b9a6-ddb6aa149571
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 1000
+        - m_Guid: 5d483133-65d4-40e3-96f8-7cb1ec77ee17
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 025180d6-0cc4-40bf-9f65-40527760142c
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 025180d6-0cc4-40bf-9f65-40527760142c
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: 90c876ba-acfa-4e76-8a18-77a3afd4e6e5
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 90c876ba-acfa-4e76-8a18-77a3afd4e6e5
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 37355003-7502-47c7-825e-d4d2f0726cd0
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 37355003-7502-47c7-825e-d4d2f0726cd0
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 1200
+        - m_Guid: ecf2e50b-ead0-494d-86fa-cc15a2e4f907
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 18939b57-9992-4a02-bbd9-1b3ee180524e
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 18939b57-9992-4a02-bbd9-1b3ee180524e
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: e4cdad73-b655-4ce3-a632-7f20dc7d318b
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: e4cdad73-b655-4ce3-a632-7f20dc7d318b
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 6d306f1d-b5b3-477f-93cc-cf80760712d7
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 6d306f1d-b5b3-477f-93cc-cf80760712d7
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 1400
+        - m_Guid: 0cd3d209-5b25-4088-aad4-4f4e125f45a9
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 53dd1c7a-097a-40bc-a670-7ce17c300d25
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 53dd1c7a-097a-40bc-a670-7ce17c300d25
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: f8376079-b29e-4fed-8c51-4d6dd385c131
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: f8376079-b29e-4fed-8c51-4d6dd385c131
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 9f488ad4-09ec-406b-8daf-46edd4ae5d1a
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 9f488ad4-09ec-406b-8daf-46edd4ae5d1a
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 1600
+        - m_Guid: 49c127ca-4c91-4a33-a83f-6620997a73d0
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 90d5c6eb-954d-4933-a132-284189dbe4f2
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 90d5c6eb-954d-4933-a132-284189dbe4f2
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: 244ce679-4539-47c7-8c14-02cebdeddded
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 244ce679-4539-47c7-8c14-02cebdeddded
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: 9cb8dde2-1e74-4cc1-915d-6e581e2718ae
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 9cb8dde2-1e74-4cc1-915d-6e581e2718ae
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 1800
+        - m_Guid: b64fe1ee-bf0a-4d97-bd3a-145b9671fbd5
+          m_State: 1
+          m_Disposing: 0
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_Name: Medival Item Icon
+          m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+            Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+            Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+            art by midjourney and greg rutkowski
+          parent_id: 00000000-0000-0000-0000-000000000000
+          m_TrainingSetData:
+            m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+            m_State: 5
+            m_Disposing: 0
+            m_TrainingSet: []
+            m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+          m_ValidationImagesData:
+          - m_Guid: 70fb688f-f744-47b3-9ae8-ab1189b4e4b2
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: 70fb688f-f744-47b3-9ae8-ab1189b4e4b2
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, armour with
+          - m_Guid: fe0c13f9-25a6-40a1-a248-0d21343867b5
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: fe0c13f9-25a6-40a1-a248-0d21343867b5
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, axe with woo
+          - m_Guid: c7eef3c8-8711-4cd3-a5a3-a91e753d681b
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              m_Guid: c7eef3c8-8711-4cd3-a5a3-a91e753d681b
+              m_State: 1
+              m_Disposing: 0
+            m_Prompt: medival, high quality, item, atey ghailan, by jeremy mann,
+              greg manchess, antonio moro, trending on artstation, trending on cgsociety,
+              intricate, high detail, sharp focus, dramatic, photorealistic painting
+              art by midjourney and greg rutkowski, jewel, shini
+          m_TrainingSteps: 2000
+        m_SampleOutputPrompts:
+        - medival, high quality, item, atey ghailan, by jeremy mann, greg manchess,
+          antonio moro, trending on artstation, trending on cgsociety, intricate,
+          high detail, sharp focus, dramatic, photorealistic painting art by midjourney
+          and greg rutkowski, armour with
+        - medival, high quality, item, atey ghailan, by jeremy mann, greg manchess,
+          antonio moro, trending on artstation, trending on cgsociety, intricate,
+          high detail, sharp focus, dramatic, photorealistic painting art by midjourney
+          and greg rutkowski, axe with woo
+        - medival, high quality, item, atey ghailan, by jeremy mann, greg manchess,
+          antonio moro, trending on artstation, trending on cgsociety, intricate,
+          high detail, sharp focus, dramatic, photorealistic painting art by midjourney
+          and greg rutkowski, jewel, shini
+        m_TrainingSetData:
+        - m_Guid: 7288209d-bdc8-4199-8e92-f8a2af7a8fde
+          m_State: 1
+          m_Disposing: 0
+          m_TrainingSet:
+          - m_Guid: c7394ca4-3e94-4e59-be28-c9609160a1f0
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 2213585397494317278
+          - m_Guid: dc9d5a47-9ba8-4213-8240-54eaa53a44e3
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 2213585397494317279
+          - m_Guid: c1a21ae5-e2fb-4d6b-ab1e-05e9a2fb6cdb
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 2213585397494317280
+          - m_Guid: 30a7453b-fcb5-43ec-80f3-95ea727c3d9d
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 2213585397494317281
+          - m_Guid: df4c4bb0-d872-41e7-9a46-5c5553055cfa
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 2213585397494317282
+          - m_Guid: 7bbcd824-0ff7-48bf-b256-d6e45db140ba
+            m_State: 5
+            m_Disposing: 0
+            m_ImageArtifact:
+              rid: 2213585397494317283
+          m_ProjectID: f1a9d62e-cfd3-4da6-8952-a7896ebd3ed3
+        m_Name: Medival Item Icon
+        m_Description: Medival, High Quality, Item, Atey Ghailan, by Jeremy Mann,
+          Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety,
+          Intricate, High Detail, Sharp focus, dramatic, photorealistic painting
+          art by midjourney and greg rutkowski
+    - rid: 2213585397494317271
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 00000000-0000-0000-0000-000000000000
+        m_State: 3
+        m_Disposing: 1
+    - rid: 2213585397494317278
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: c7394ca4-3e94-4e59-be28-c9609160a1f0
+        m_State: 1
+        m_Disposing: 1
+    - rid: 2213585397494317279
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: dc9d5a47-9ba8-4213-8240-54eaa53a44e3
+        m_State: 1
+        m_Disposing: 1
+    - rid: 2213585397494317280
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: c1a21ae5-e2fb-4d6b-ab1e-05e9a2fb6cdb
+        m_State: 1
+        m_Disposing: 1
+    - rid: 2213585397494317281
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 30a7453b-fcb5-43ec-80f3-95ea727c3d9d
+        m_State: 1
+        m_Disposing: 1
+    - rid: 2213585397494317282
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: df4c4bb0-d872-41e7-9a46-5c5553055cfa
+        m_State: 1
+        m_Disposing: 1
+    - rid: 2213585397494317283
+      type: {class: ImageArtifact, ns: Unity.Muse.StyleTrainer, asm: Unity.Muse.StyleTrainer}
+      data:
+        m_Guid: 7bbcd824-0ff7-48bf-b256-d6e45db140ba
+        m_State: 1
+        m_Disposing: 1
