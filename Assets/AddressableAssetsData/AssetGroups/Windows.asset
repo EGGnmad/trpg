@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Windows
+  m_EditorClassIdentifier: 
+  m_GroupName: Windows
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a6fa762556552a74fa04850fba4e3f89
+  m_SerializeEntries:
+  - m_GUID: 6e9747d16199dc245949fbaa8bf6bd97
+    m_Address: Assets/Prefabs/Chat/Message.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: eb74829c123d67f4c93cee6fde9de4f6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 639c8bce0a1c7fc48a3330400b82a313, type: 2}
+    - {fileID: 11400000, guid: 9f7c16b4c5db5b34e959d08e3b117e91, type: 2}

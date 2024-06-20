@@ -123,6 +123,105 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &181940193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181940194}
+  - component: {fileID: 181940195}
+  m_Layer: 5
+  m_Name: ConsoleLogger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &181940194
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181940193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 779688172}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &181940195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181940193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fafd9c4567554bc7b80b0774c4d3d329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &305478462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 305478463}
+  - component: {fileID: 305478464}
+  m_Layer: 5
+  m_Name: VivoxChatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &305478463
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305478462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 779688172}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &305478464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305478462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108c827e63a34ec2a2e0cdc9c2766f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _input: {fileID: 411023952}
+  _inputField: {fileID: 411023954}
+  _sendBtn: {fileID: 411023953}
 --- !u!1 &351333660
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +367,18 @@ PrefabInstance:
       propertyPath: _section
       value: 
       objectReference: {fileID: 779688172}
+    - target: {fileID: 1547387050315493976, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
+      propertyPath: _loggers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547387050315493976, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
+      propertyPath: _loggers.Array.data[0]
+      value: 
+      objectReference: {fileID: 305478464}
+    - target: {fileID: 1547387050315493976, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
+      propertyPath: _loggers.Array.data[1]
+      value: 
+      objectReference: {fileID: 181940195}
     - target: {fileID: 1598040846646899828, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
       propertyPath: m_Name
       value: Chat
@@ -396,9 +507,31 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &411023952 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1598040846646899828, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
+  m_CorrespondingSourceObject: {fileID: 825182131253680029, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
   m_PrefabInstance: {fileID: 411023950}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &411023953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2451343587913385514, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
+  m_PrefabInstance: {fileID: 411023950}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &411023954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7538969207903343817, guid: 3ea40ed2bb739d94eafe3c9dd124d506, type: 3}
+  m_PrefabInstance: {fileID: 411023950}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &448114147
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +850,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 411023951}
+  - {fileID: 305478463}
+  - {fileID: 181940194}
   m_Father: {fileID: 879089767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1216,7 +1351,7 @@ MonoBehaviour:
     TypeName: TRPG.Vivox.VivoxDependencyInstaller
   autoRun: 1
   autoInjectGameObjects:
-  - {fileID: 411023952}
+  - {fileID: 305478462}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

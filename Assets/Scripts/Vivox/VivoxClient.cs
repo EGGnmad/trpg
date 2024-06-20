@@ -1,9 +1,8 @@
 using System;
-using System.Threading.Tasks;
-using Unity.Services.Authentication;
-using Unity.Services.Core;
+using Cysharp.Threading.Tasks;
 using Unity.Services.Vivox;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace TRPG.Vivox
 {
@@ -11,46 +10,66 @@ namespace TRPG.Vivox
     {
         public bool IsInitialized { get; private set; } = false;
         public string CurrentChannelName { get; private set; } = "Lobby";
+        public string DisplayName { get; private set; }
+        
+        public event Action<VivoxMessage> MessageReceived;
+        public UnityEvent JoinCompleted;
         
         private async void Start()
         {
             await InitializeAsync();
             IsInitialized = true;
-            Debug.Log("Init Completed");
 
             await LoginAsync();
-            Debug.Log("Login Completed");
 
-            await JoinChannel(CurrentChannelName);
-            Debug.Log("Join Completed");
+            await JoinChannelAsync(CurrentChannelName);
+            Debug.Log("접속 완료");
+            JoinCompleted.Invoke();
         }
 
-        public async Task InitializeAsync()
+        public async UniTask InitializeAsync()
         {
-            await UnityServices.InitializeAsync();
-            await AuthenticationService.Instance.SignInAnonymouslyAsync();
             await VivoxService.Instance.InitializeAsync();
         }
 
-        public async Task LoginAsync()
+        public async UniTask LoginAsync()
         {
+            DisplayName = Guid.NewGuid().ToString();
             LoginOptions options = new()
             {
-                DisplayName = Guid.NewGuid().ToString(),
+                DisplayName = this.DisplayName,
             };
             
             await VivoxService.Instance.LoginAsync(options);
         }
         
-        public async Task JoinChannel(string channelName)
+        public async UniTask JoinChannelAsync(string channelName)
         {
             CurrentChannelName = channelName;
             await VivoxService.Instance.JoinGroupChannelAsync(CurrentChannelName, ChatCapability.TextAndAudio);
+
+            VivoxService.Instance.ChannelMessageReceived += ReceiveMessage;
         }
 
-        public async Task SendMessage(string message)
+        public async UniTask LeaveCurrentChannelAsync()
+        {
+            if (CurrentChannelName == String.Empty) return;
+            
+            CurrentChannelName = String.Empty;
+            VivoxService.Instance.ChannelMessageReceived -= ReceiveMessage;
+            
+            await VivoxService.Instance.LeaveChannelAsync(CurrentChannelName);
+        }
+
+        public new async UniTaskVoid SendMessage(string message)
         {
             await VivoxService.Instance.SendChannelTextMessageAsync(CurrentChannelName, message);
+        }
+
+        public void ReceiveMessage(VivoxMessage message)
+        {
+            if (message.FromSelf) return;
+            MessageReceived?.Invoke(message);
         }
     }
 }

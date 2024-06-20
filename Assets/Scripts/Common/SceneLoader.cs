@@ -7,9 +7,14 @@ namespace TRPG.Common
 {
     public class SceneLoader : MonoBehaviour
     {
-        void Start()
+        public void LoadScene(string name)
         {
-            SceneManager.LoadSceneAsync("PlayerUIScene", LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(name);
+        }
+
+        public void LoadSceneAdditive(string name)
+        {
+            SceneManager.LoadSceneAsync(name, LoadSceneMode.Additive);
         }
     }
 }

@@ -2,6 +2,7 @@ using TMPro;
 using TRPG.Vivox;
 using Unity.Services.Vivox;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.UI;
 using VContainer;
 
@@ -11,34 +12,29 @@ namespace TRPG.UI
     {
         [Header("Chat View")]
         [SerializeField] private ScrollRect _scrollView;
-        [SerializeField] private TMP_InputField _inputField;
-        [SerializeField] private Button _sendBtn;
 
+        [Header("Loggers")] 
+        [SerializeField] private Logger[] _loggers;
+        
         [Inject] private VivoxClient _client;
 
         private void Start()
         {
-            // Receive
-            VivoxService.Instance.ChannelMessageReceived += (msg) =>
+            foreach (var logger in _loggers)
             {
-                ShowMessage(msg.MessageText);
-            };
-            
-            // Send
-            _sendBtn.onClick.AddListener(() =>{
-                SendMessage(_inputField.text);
-            });
+                logger.OnLog += ShowMessage;
+            }
         }
 
-        public void ShowMessage(string message)
+        public async void ShowMessage(string message)
         {
-            
-        }
+            // 생성
+            GameObject messagePrefab = await Addressables.InstantiateAsync("Assets/Prefabs/Chat/Message.prefab").Task;
 
-        public async new void SendMessage(string message)
-        {
-            if(_client == null) Debug.LogError("VivoxClient is not ready!");
-            await _client.SendMessage(message);
+            // 채팅창에 추가
+            messagePrefab.transform.SetParent(_scrollView.content);
+            messagePrefab.transform.localScale = Vector3.one;
+            messagePrefab.GetComponent<TextMeshProUGUI>().text = message;
         }
     }
 }
